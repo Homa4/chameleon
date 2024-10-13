@@ -1,0 +1,45 @@
+.menuWrapper{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.namePricePanel{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.imgContainer{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 75%;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.img{
+    border: 1px solid black;
+    max-width: 100%;
+    height: 90%;
+}
+
+.btnPopUp{
+    display: none;
+}
+
+.dis{
+    color: rgb(118, 111, 111);
+    margin-bottom: 5px;
+}
+
+.engeLine{
+    width: 230px;
+    margin: 0 auto;
+}
+
+.title{
+    text-decoration: underline;
+}
