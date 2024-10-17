@@ -7,21 +7,16 @@ import headerImg2 from "./compImages/Hname2.png"
 // import headerImg6 from "./compImages/logo3.1.png"
 // import headerImg7 from "./compImages/logo4.jpeg"
 // import headerImg8 from "./compImages/logo4.1.png"
-
-
-
-
-
 import "./Headers.css";
 
 function Headers(params) {
     return (
-        <header className="headerWithImg">
+        <div className="headerWithImg">
             <div className="imgWrapper">
                 <img src={headerImg2} alt="headerimage" className="headerImg"></img>
             </div>
             <div className="navBar"></div>
-        </header>
+        </div>
     )
 }
 

@@ -1,4 +1,25 @@
-// import { type } from "@testing-library/user-event/dist/type";
+const dependencys = {
+    'pizza': 'Піца',
+    'breakfast': 'Сніданок',
+    'snack': 'Закуска',
+    'snackFwine': 'Закуска з вином',
+    'snackFvodka': 'Закуска з горілкою',
+    'pickles': 'Маринади',
+    'snackFbeer': 'Закуска з пивом',
+    'hotSnack': 'Гаряча Закуска',
+    'salad': 'Салат',
+    'pasta': 'Паста',
+    'sdish': 'Гарнір',
+    'fdish': 'Перші Страви',
+    'mdish': 'Основні Страви',
+    'dumpling': 'Вареники та Пельмені',
+    'desert': 'Десерт',
+    'shampain': 'Шампанське',
+    'wineI': 'Італійське Вино',
+    'wineU': 'Українське Вино',
+    'Wwine': 'Біле Вино',
+    'wineF': 'Французьке Вино'
+};
 
 const menu = [
     {
@@ -779,4 +800,7 @@ const menu = [
     // 5 slide, 6 left
 ];
 
-export default menu;
+const data = {dependencys, menu}
+
+
+export default data;

@@ -1,11 +1,14 @@
 import React from "react";
-import dlist from "../logic/dlist"; // Import the data
+import data from "../logic/dlist"; // Import the data
 import "./Menu.css";
 import tempDishImg from "../component/compImages/tempDishImg.png";
 
+
 function Menu() {
+    const { dependencys, menu } = data;
+    console.log(data);
     // Group dishes by dtype
-    const groupedDishes = dlist.reduce((acc, dish) => {
+    const groupedDishes = menu.reduce((acc, dish) => {
         if (!acc[dish.dtype]) {
             acc[dish.dtype] = [];
         }
@@ -18,10 +21,10 @@ function Menu() {
             {
                 Object.keys(groupedDishes).map(dtype => (
                     <div key={dtype} className="dtypeSection">
-                        <h1 className="title">{dtype.toUpperCase()}</h1>
+                        <h1 className="title">{dependencys[dtype]}</h1>
                         {
                             groupedDishes[dtype].map(dish => (
-                                <div key={dish.name} className="menuWrapper">
+                                <div key={dish.name} id={dish.dtype} className="menuWrapper">
                                     <div className="imgContainer">
                                         <img src={tempDishImg} alt="dishImg" className="img"></img>
                                         <button className="btnPopUp"></button>
