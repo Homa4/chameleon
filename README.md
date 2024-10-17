@@ -1,5 +1,3 @@
-![Uploading chameleon.svg…]()
-
 ![chameleon (1)](https://github.com/user-attachments/assets/05082b4e-2c58-45f0-950d-f0753e6140ab)
 
 
