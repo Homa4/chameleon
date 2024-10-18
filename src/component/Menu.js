@@ -20,18 +20,18 @@ function Menu() {
         <div className="menu">
             {
                 Object.keys(groupedDishes).map(dtype => (
-                    <div key={dtype} className="dtypeSection">
+                    <div key={dtype} id={dtype} className="dtypeSection">
                         <h1 className="title">{dependencys[dtype]}</h1>
                         {
-                            groupedDishes[dtype].map(dish => (
-                                <div key={dish.name} id={dish.dtype} className="menuWrapper">
+                            groupedDishes[dtype].map((dish, index) => (
+                                <div key={index} id={index} className="menuWrapper">
                                     <div className="imgContainer">
                                         <img src={tempDishImg} alt="dishImg" className="img"></img>
                                         <button className="btnPopUp"></button>
                                     </div>
                                     <div className="namePricePanel">
                                         <h2>{dish.name}</h2>
-                                        <h2>{dish.price}</h2>
+                                        <h2 className="price">{dish.price}</h2>
                                     </div>
                                     <h4 className="dis">{dish.description}</h4>
                                     <hr className="engeLine"></hr>

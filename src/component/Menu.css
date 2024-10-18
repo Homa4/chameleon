@@ -33,13 +33,19 @@
 .dis{
     color: rgb(118, 111, 111);
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .engeLine{
     width: 230px;
-    margin: 0 auto;
+    margin: 5px auto 15px;
 }
 
 .title{
     text-decoration: underline;
+}
+
+.price::after{
+    content: ' грн';
+    font-size: smaller;
 }

@@ -2,12 +2,11 @@
     overflow-x: auto; 
     white-space: nowrap; 
     background-color: #d8cfcf;
-    position: fixed; /* Fix the navbar at the top */
-    top: 0; /* Stick it to the top of the viewport */
+    position: sticky;
+    top: 0; 
     left: 0;
-    width: 100%; /* Ensure it spans the full width */
-    z-index: 1000; /* Make sure it stays on top of other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for visual separation */
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .navBar {
