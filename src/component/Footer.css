@@ -1,0 +1,21 @@
+.footer {
+    background-color: #f0e0c1; /* Beige tone from the background */
+    color: #2b5329; /* Dark green for text */
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer .address, .footer .phone {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #d94d26; /* Red/orange tone from the pizza */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #f08c41; /* Lighter orange on hover */
+}
